@@ -287,14 +287,14 @@
                   $select.refreshDelay = refreshDelay !== undefined ? refreshDelay : uiSelectConfig.refreshDelay;
                 });
 
-                scope.$watch('$select.open', function(open) {
-                  if (open) {
-                    tElement.attr('role', 'listbox');
-                    $select.refresh(attrs.refresh);
-                  } else {
-                    element.removeAttr('role');
-                  }
-                });
+                // scope.$watch('$select.open', function(open) {
+                //   if (open) {
+                //     tElement.attr('role', 'listbox');
+                //     $select.refresh(attrs.refresh);
+                //   } else {
+                //     element.removeAttr('role');
+                //   }
+                // });
               };
             }
           };
