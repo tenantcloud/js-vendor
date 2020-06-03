@@ -389,7 +389,8 @@
           // Most of the time the user does not want to empty the search input when in typeahead mode
           function _resetSearchInput() {
             if (ctrl.resetSearchInput) {
-              ctrl.search = EMPTY_SEARCH;
+              //fix
+              //ctrl.search = EMPTY_SEARCH;
               //reset activeIndex
               if (ctrl.selected && ctrl.items.length && !ctrl.multiple) {
                 ctrl.activeIndex = _findIndex(ctrl.items, function(item){
