@@ -277,7 +277,8 @@
                   if (!attrs.minimumInputLength || $select.search.length >= attrs.minimumInputLength) {
                     $select.refresh(attrs.refresh);
                   } else {
-                    $select.items = [];
+                    // fix
+                    // $select.items = [];
                   }
                 });
 
