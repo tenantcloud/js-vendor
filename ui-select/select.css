@@ -328,7 +328,7 @@ body > .ui-select-bootstrap.open {
 .ui-select-refreshing.glyphicon {
     position: absolute;
     right: 0;
-    padding: 8px 27px;
+    padding: 2px 30px;
 }
 
 @-webkit-keyframes ui-select-spin {
