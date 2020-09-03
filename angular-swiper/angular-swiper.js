@@ -101,9 +101,10 @@
 						if (!_.isBoolean($scope.navigation)) {
 							params.navigation = {
 								nextEl: `#nextButton-${$scope.swiper_uuid}`,
-								prevEl: `#prevButton-${$scope.swiper_uuid}`,
-								...$scope.navigation,
+								prevEl: `#prevButton-${$scope.swiper_uuid}`
 							};
+
+							params.navigation = Object.assign(params.navigation, $scope.navigation);
 						}
 					}
 
