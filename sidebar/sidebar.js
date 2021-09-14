@@ -77,7 +77,7 @@
 		var event = new CustomEvent('sidebar-open');
 		this.$element.addClass('visible');
 		this.$body.addClass('sidebar-open');
-		document.body.dispatchEvent(event);ч
+		document.body.dispatchEvent(event);
 	};
 	Sidebar.prototype.closeSidebar = function() {
 		var event = new CustomEvent('sidebar-close');
