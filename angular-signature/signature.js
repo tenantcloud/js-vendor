@@ -95,7 +95,7 @@ angular.module('signature').directive('signaturePad', [
 					scope.signaturePad.clear();
 					scope.signaturePad.fromDataURL(dataUrl);
 
-					if (_.has(scope, 'defaulturl')) {
+					if (scope.hasOwnProperty('defaulturl')) {
 						scope.defaulturl = dataUrl;
 					}
 
